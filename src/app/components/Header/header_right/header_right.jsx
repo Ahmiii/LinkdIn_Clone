@@ -1,5 +1,7 @@
 import React from "react";
 import HeaderOption from "./headerOptions/headerOptions";
+import HomeIcon from "@material-ui/icons/Home";
+import SupervisorAccountIcon from "@material-ui/icons/SupervisorAccount";
 import "./header_right.css";
 
 const header_right = () => {
@@ -7,8 +9,8 @@ const header_right = () => {
 
   return (
     <div className="header__right">
-      <HeaderOption title="Home" />
-      <HeaderOption title="My Network" />
+      <HeaderOption Icon={HomeIcon} title="Home" />
+      <HeaderOption Icon={SupervisorAccountIcon} title="My Network" />
     </div>
   );
 };
