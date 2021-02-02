@@ -5,7 +5,7 @@ const header_left = () => {
   return (
     <div className="header__left">
       <img
-        src="https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token=exp=1611514435~hmac=b118c20dc96852af9d81f223fe9e01ee"
+        src="https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token=exp=1612291985~hmac=49916e42e5c787c439d0f34a4d270639"
         alt=""
       />
       <div className="header__search">
