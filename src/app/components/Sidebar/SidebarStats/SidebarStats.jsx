@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./SidebarStats.css";
 const SidebarStats = () => {
   return (
     <div className="sidebar__stats">
