@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./UploadContent.css";
 const UploadContent = ({ Icon, title, color }) => {
   return (
     <div className="upload">

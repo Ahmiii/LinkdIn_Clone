@@ -1,2 +1,15 @@
 .upload {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  padding: 10px;
+  cursor: pointer;
+}
+.upload > h4 {
+  margin-left: 7px;
+  color: gray;
+}
+.upload:hover {
+  background-color: whitesmoke;
+  border-radius: 10px;
 }

@@ -27,3 +27,7 @@
 .feed__input > form > button {
   display: none;
 }
+.feed__uploadMenus {
+  display: flex;
+  justify-content: space-between;
+}
