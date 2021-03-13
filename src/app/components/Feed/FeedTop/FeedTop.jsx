@@ -6,6 +6,7 @@ import SubscriptionIcon from "@material-ui/icons/Subscriptions";
 import EventNoteIcon from "@material-ui/icons/EventNote";
 import CalenderViewDayIcon from "@material-ui/icons/CalendarViewDay";
 import { db } from "../../../../firebase";
+import firebase from "firebase";
 
 import "./FeedTop.css";
 const FeedTop = () => {
@@ -22,6 +23,7 @@ const FeedTop = () => {
       description: "code from heart",
       photoUrl: "",
       post: input,
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
   };
 

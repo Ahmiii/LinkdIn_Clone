@@ -15,7 +15,6 @@ const Feed = () => {
         }))
       );
     });
-    console.log({ posts });
   }, []);
   return (
     <div className="Feed">
@@ -25,6 +24,7 @@ const Feed = () => {
         posts.map((post) => {
           return (
             <FeedPost
+              key={post.id}
               name={post.data.name}
               description={post.data.description}
               post={post.data.post}
