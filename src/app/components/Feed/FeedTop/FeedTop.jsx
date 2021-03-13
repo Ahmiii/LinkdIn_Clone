@@ -1,20 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import UploadContent from "./UploadContent/UploadContent";
 import CreateIcon from "@material-ui/icons/Create";
 import ImageIcon from "@material-ui/icons/Image";
 import SubscriptionIcon from "@material-ui/icons/Subscriptions";
 import EventNoteIcon from "@material-ui/icons/EventNote";
 import CalenderViewDayIcon from "@material-ui/icons/CalendarViewDay";
+import { db } from "../../../../firebase";
 
 import "./FeedTop.css";
 const FeedTop = () => {
+  const [input, setInput] = useState("");
+
+  const Post = (e) => {
+    setInput(e.target.value);
+  };
+
+  const submitPost = (e) => {
+    e.preventDefault();
+    db.collection("posts").add({
+      name: "Ahmed Faraz",
+      description: "code from heart",
+      photoUrl: "",
+      post: input,
+    });
+  };
+
   return (
     <div className="feed_inputContainer">
       <div className="feed__input">
         <CreateIcon />
         <form>
-          <input type="text"></input>
-          <button type="submit">Submit</button>
+          <input type="text" value={input} onChange={Post}></input>
+          <button type="submit" onClick={submitPost}>
+            Submit
+          </button>
         </form>
       </div>
       <div className="feed__uploadMenus">

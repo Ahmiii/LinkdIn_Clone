@@ -8,8 +8,6 @@ import NotificationIcon from "@material-ui/icons/Chat";
 import "./header_right.css";
 
 const header_right = () => {
-  console.log("heelo world");
-
   return (
     <div className="header__right">
       <HeaderOption Icon={HomeIcon} title="Home" />
