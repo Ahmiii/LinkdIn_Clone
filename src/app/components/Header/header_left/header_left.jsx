@@ -5,7 +5,7 @@ const header_left = () => {
   return (
     <div className="header__left">
       <img
-        src="https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token=exp=1612291985~hmac=49916e42e5c787c439d0f34a4d270639"
+        src="http://www.pngall.com/wp-content/uploads/2016/07/Linkedin-Download-PNG.png"
         alt=""
       />
       <div className="header__search">
